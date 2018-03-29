@@ -42,7 +42,6 @@ public class CalculatorExample {
         else return 0;  // niedozwolona operacja! jak sobie z tym poradzić?
     }
 
-
     public static void main(String[] args) {
 
         System.out.println(add(1, 2));
@@ -56,8 +55,5 @@ public class CalculatorExample {
         calculate(4, 2, "print -");
 
         System.out.println(add(1, 2, 3));
-
     }
-
-
 }

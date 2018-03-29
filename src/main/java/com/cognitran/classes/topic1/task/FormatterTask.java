@@ -10,6 +10,7 @@ public class FormatterTask
     public String format(int number)
     {
         StringBuilder builder = new StringBuilder();
+        
         return builder.toString();
     }
 }

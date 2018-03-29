@@ -15,6 +15,5 @@ public class MathExample {
 
         c = a * b;
         System.out.println("a * b = " + c);
-
     }
 }

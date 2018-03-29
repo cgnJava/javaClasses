@@ -1,1 +1,1 @@
-# javaClasses
+# Projekt szkoleniowy Javy od podstaw
