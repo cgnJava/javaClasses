@@ -1,5 +1,8 @@
 package com.cognitran.classes.topic1.task;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class MathTask
 {
     /**
@@ -18,6 +21,18 @@ public class MathTask
      */
     public int guess2()
     {
-        return 0;
+        double number = Math.random();
+        if (number >= 0.5)
+        {
+            return (int) Math.round(5 * Math.random() + 5);
+        }
+        return (int) Math.round(5 * Math.random() + 15);
+    }
+
+    public int guess2Solution2()
+    {
+        List<Integer> list = Arrays.asList(5, 6, 7, 8, 9, 10, 15, 16, 17, 18, 19, 20);
+        int index = (int) Math.round((list.size() - 1) * Math.random());
+        return list.get(index).intValue();
     }
 }

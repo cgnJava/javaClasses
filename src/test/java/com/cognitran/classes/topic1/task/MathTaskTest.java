@@ -10,8 +10,7 @@ public class MathTaskTest
     public void shouldReturnValueFrom1to5()
     {
         MathTask task = new MathTask();
-        for (int i = 0; i < 1000; i++)
-        {
+        for (int i = 0; i < 1000; i++) {
             int value = task.guess1();
             assertTrue(value >= 1 && value <= 5);
         }
@@ -21,9 +20,18 @@ public class MathTaskTest
     public void shouldReturnValueFrom5to10orFrom15t020()
     {
         MathTask task = new MathTask();
-        for (int i = 0; i < 1000; i++)
-        {
+        for (int i = 0; i < 1000; i++) {
             int value = task.guess2();
+            assertTrue(value >= 5 && value <= 10 || value >= 15 && value<= 20);
+        }
+    }
+
+    @Test
+    public void shouldReturnValueFrom5to10orFrom15t020_solution2()
+    {
+        MathTask task = new MathTask();
+        for (int i = 0; i < 1000; i++) {
+            int value = task.guess2Solution2();
             assertTrue(value >= 5 && value <= 10 || value >= 15 && value<= 20);
         }
     }
