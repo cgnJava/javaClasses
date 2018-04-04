@@ -1,5 +1,6 @@
 package com.cognitran.classes.collections.task;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -10,14 +11,17 @@ public class ListTask
      * Nie używając metody sublist, napisz funkcję, która zwróci listę elementów od indexu from do to
      */
     public List<String> getSublist(List<String> list, int from, int to) {
-        return list;
+        List<String> result = new ArrayList<>();
+        
+        return result;
     }
 
     /**
      * Zwróć listę unikalnych elementów z listy podanej w parametrze metody.
      */
     public List<String> getUniqueList(List<String> list) {
-        return list;
+        List<String> result = new ArrayList<>();
+        return result;
     }
 
     /**

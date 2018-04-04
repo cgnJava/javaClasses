@@ -25,7 +25,7 @@ public class ArraysTask
      * dla nieparzystej liczby elementów w tablicy - to jest środkowa wartość po posortowaniu
      * dla parzystej średnia arytmetyczna ze środkowych 2 wartości
      */
-    public double calculateMedian(int[] values) {
+    public double calculateMedian(double[] values) {
         double result = values[0];
         if (values.length % 2 == 1) { // modulo - reszta z dzielenia
             
