@@ -31,5 +31,15 @@ public class IfExample {
         {
             System.out.println("ala ma kota 2");
         }
+        System.out.println("-----------------------------------------");
+
+        if (Integer.valueOf(127) == Integer.valueOf(127))
+        {
+            System.out.println("ala ma kota dla 127");
+        }
+        if (Integer.valueOf(128) == Integer.valueOf(128))
+        {
+            System.out.println("ala ma kota dla 128");
+        }
     }
 }
