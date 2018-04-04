@@ -6,21 +6,27 @@ public class Person
     private String firstName;
     private String lastName;
     private Integer cityId;
-    
+
+    private String cityName;
+
     public Person()
     {
         super();
     }
-    
-    public Person(Integer id, String firstName, String lastName, int cityId)
+
+    public Person(int id, String firstName, String lastName, int cityId)
     {
-        this.id = id;
+        this.id = Integer.valueOf(id);
         this.firstName = firstName;
         this.lastName = lastName;
-        this.cityId = cityId;
+        this.cityId = Integer.valueOf(cityId);
     }
 
-    private String cityName;
+    @Override
+    public int hashCode()
+    {
+        return id == null ? 0 : id.hashCode();
+    }
 
     public Integer getId()
     {

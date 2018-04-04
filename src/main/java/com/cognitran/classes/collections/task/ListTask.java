@@ -39,13 +39,6 @@ public class ListTask
     }
 
     /**
-     * Zwróć najczęściej występującą liczbę z listy. Podpowiedz: użyj Map<Integer, Integer>, gdzie klucz to liczba, a wartość to licznik wystąpień.
-     */
-    public int findTheMostFrequent(List<Integer> list) {
-        return list.get(0).intValue();
-    }
-
-    /**
      * Posortuj listę w taki sposób:
      * 1. krótsza nazwa jest wcześniej w porządku (metoda length)
      * 2. przy takiej samej długości posortuj alfabetycznie (metoda compareToIgnoreCase).

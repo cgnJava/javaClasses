@@ -48,13 +48,6 @@ public class ListTaskTest
     }
 
     @Test
-    public void shouldFindTheMostFrequent()
-    {
-        ListTask task = new ListTask();
-        assertEquals(2, task.findTheMostFrequent(Arrays.asList(1, 2, 3, 4, 2)));
-    }
-
-    @Test
     public void shouldSortListShorterFirst()
     {
         ListTask task = new ListTask();

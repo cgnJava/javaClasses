@@ -12,6 +12,18 @@ public class ArraysTask
     }
 
     /**
+     * Policz ile wyrazów zaczyna się małą literą, a ile wielką - wskazowka: Character.isUpperCase(), Character.isUpperCase()
+     * @return tablica 2-elementowa, gdzie wartość pod pierwszym indeksem jest licznikiem wyrazów zaczynających się od małej litery,
+     *         a pod drugim indeksem - licznikiem wyrazów zaczynających się od wielkiej litery
+     */
+    public int[] countLowercaseUppercase(String... array)
+    {
+        int[] result = new int[2];
+        
+        return result;
+    }
+
+    /**
      * Oblicz średnią arytmetyczną podanych liczb.
      */
     public double calculateAverage(int[] values) {

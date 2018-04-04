@@ -24,9 +24,9 @@ public class MathTask
         double number = Math.random();
         if (number >= 0.5)
         {
-            return (int) Math.round(5 * Math.random() + 5);
+            return (int) Math.round(5 * number + 5);
         }
-        return (int) Math.round(5 * Math.random() + 15);
+        return (int) Math.round(5 * number + 15);
     }
 
     public int guess2Solution2()

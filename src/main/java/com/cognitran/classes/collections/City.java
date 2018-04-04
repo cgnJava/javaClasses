@@ -10,9 +10,9 @@ public class City
         super();
     }
 
-    public City(Integer id, String name)
+    public City(int id, String name)
     {
-        this.id = id;
+        this.id = Integer.valueOf(id);
         this.name = name;
     }
 

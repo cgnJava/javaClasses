@@ -12,7 +12,7 @@ public class MapExample
         List<City> cities = Arrays.asList(
                         new City(1, "Warszawa"),
                         new City(2, "Szczecin"));
-        
+
         List<Person> users = Arrays.asList(
                         new Person(1, "Leszek", "Opania", 1),
                         new Person(2, "Lukasz", "Piepior", 2));
@@ -22,7 +22,6 @@ public class MapExample
         {
             cityMap.put(city.getId(), city.getName());
         }
-
         for (Person user : users)
         {
             user.setCityName(cityMap.get(user.getCityId()));
