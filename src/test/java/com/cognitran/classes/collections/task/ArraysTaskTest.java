@@ -20,8 +20,8 @@ public class ArraysTaskTest
     {
         ArraysTask task = new ArraysTask();
         int[] result = task.countLowercaseUppercase("Adam", "alfa", "Gdańsk", "1", "", null);
-        assertEquals(2, result[0]);
-        assertEquals(1, result[1]);
+        assertEquals(1, result[0]);
+        assertEquals(2, result[1]);
     }
 
     @Test

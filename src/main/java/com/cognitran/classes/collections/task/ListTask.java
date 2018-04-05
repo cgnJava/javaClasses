@@ -8,7 +8,7 @@ import java.util.List;
 public class ListTask
 {
     /**
-     * Nie używając metody sublist, napisz funkcję, która zwróci listę elementów od indexu from do to
+     * Nie używając metody sublist, napisz funkcję, która zwróci listę elementów od indexu from do to (włącznie)
      */
     public List<String> getSublist(List<String> list, int from, int to) {
         List<String> result = new ArrayList<>();
@@ -17,7 +17,7 @@ public class ListTask
     }
 
     /**
-     * Zwróć listę unikalnych elementów z listy podanej w parametrze metody.
+     * Zwróć listę unikalnych elementów z listy podanej w parametrze metody. Elementy muszą być w takiej samej kolejności jak w liście w parametrze.
      */
     public List<String> getUniqueList(List<String> list) {
         List<String> result = new ArrayList<>();
