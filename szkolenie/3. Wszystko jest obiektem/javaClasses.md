@@ -30,7 +30,7 @@
 1. w Javie można dziecziczyć tylko po jednej klasie
 2. klasa może implementować wiele interfejsów
 3. Jeżeli klasa implementuje interfejs musi mieć ciało medody z interfesu
-4. Wszystkie klasy dziedziczą po java.lang.Object
+4. Wszystkie klasy dziedziczą po java.lang.Object:
 	hashCode(), equals(), toString()
 
 ---

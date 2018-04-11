@@ -8,6 +8,12 @@ class: center, middle, inverse
 - Pierwszy program - instrukcje warunkowe, typy, pętle
 
 ---
+# Z czego uczyć się Javy
+1. SCJP - książka przygotowująca do certyfikatu http://firozstar.tripod.com/_darksiderg.pdf
+2. Bruce Eckel - Thinking in Java - po polsku
+3. Horstmann - Java. Podstawy.
+
+---
 ##Zalety i wady Javy
 - Zalety
 		- Darmowość - sama Java, IDE oraz cała masa bibiotek jest dostępna zupełnie za darmo.
