@@ -27,4 +27,12 @@ public class SetTaskTest
     {
         assertEquals(6, task.countDistinct("1", "2", "3", "1", 1, 2, 3));
     }
+
+    @Test
+    public void testHashCodeEquals()
+    {
+        assertEquals(null, task.findWifeByPesel("-1"));
+        assertEquals("Iwona", task.findWifeByPesel("123").getFirstName());
+        assertEquals("Witek", task.findWifeByPesel("125").getSurname());
+    }
 }
