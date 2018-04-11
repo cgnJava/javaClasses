@@ -13,15 +13,16 @@ import com.cognitran.classes.collections.Person;
 
 public class MapTaskTest
 {
+    private MapTask task = new MapTask();
+
     @Test
-    public void should()
+    public void shouldGroupByFirstName()
     {
         List<Person> users = new ArrayList<>();
         users.add(new Person(1, "Marian", "Opania", 1));
         users.add(new Person(2, "Lukasz", "Opania", 1));
         users.add(new Person(3, "Marian", "Kowalski", 1));
 
-        MapTask task = new MapTask();
         Map<String, List<Person>> result = task.groupByFirstName(users);
         assertEquals(2, result.get("Marian").size());
         assertEquals(1, result.get("Lukasz").size());
@@ -31,14 +32,12 @@ public class MapTaskTest
     @Test
     public void shouldFindTheMostFrequent()
     {
-        MapTask task = new MapTask();
         assertEquals(2, task.findTheMostFrequent(1, 2, 3, 4, 2));
     }
 
     @Test
     public void shouldFindMostFrequentlyDrawnNumber()
     {
-        MapTask task = new MapTask();
         int result = task.findMostFrequentlyDrawnNumber();
         assertTrue(result > 0 && result < 31);
     }

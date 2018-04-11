@@ -28,6 +28,35 @@ public class Person
         return id == null ? 0 : id.hashCode();
     }
 
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Person other = (Person) obj;
+        if (id == null)
+        {
+            if (other.id != null)
+                return false;
+        }
+        else if (!id.equals(other.id))
+            return false;
+        return true;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "ID: " + id
+                + ", firstname: " + firstName
+                + ", LastName: " + lastName
+                + ", cityId: " + cityId;
+    }
+
     public Integer getId()
     {
         return id;
