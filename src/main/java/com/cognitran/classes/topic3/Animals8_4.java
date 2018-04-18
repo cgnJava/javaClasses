@@ -1,6 +1,8 @@
 package com.cognitran.classes.topic3;
 
-import com.cognitran.classes.topic3.animals.*;
+import com.cognitran.classes.topic3.animals.AdvancedFly;
+import com.cognitran.classes.topic3.animals.CanFly;
+import com.cognitran.classes.topic3.animals.Eagle;
 
 public class Animals8_4 {
     public static void main(String[] args) {
@@ -9,10 +11,9 @@ public class Animals8_4 {
         e1.flyTogether(e2);
         e2.flyTogether(e1);
 
-
         System.out.println("**** random ****");
         AnimalFactory animalFactory = new AnimalFactory();
-        CanFly[] randomAnimals = animalFactory.createFlyingAnimals(5);
+        CanFly[] randomAnimals = animalFactory.createFlyingObjects(5);
 
         AdvancedFly advancedFly = null;
 
@@ -26,10 +27,7 @@ public class Animals8_4 {
                     advancedFly.flyTogether((AdvancedFly) animal);
                     break;
                 }
-
             }
-
         }
-
     }
 }

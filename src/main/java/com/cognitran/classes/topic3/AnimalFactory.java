@@ -7,6 +7,7 @@ import com.cognitran.classes.topic3.animals.Dog8;
 import com.cognitran.classes.topic3.animals.Duck;
 import com.cognitran.classes.topic3.animals.Eagle;
 import com.cognitran.classes.topic3.animals.MagicTiger;
+import com.cognitran.classes.topic3.animals.Plane;
 import com.cognitran.classes.topic3.animals.Tiger8;
 
 public class AnimalFactory {
@@ -14,11 +15,9 @@ public class AnimalFactory {
     public Animal[] createAnimals(int howMany)
     {
         Animal[] animals = new Animal[howMany];
-
         for (int i = 0; i < animals.length; i++) {
             animals[i] = createAnimal();
         }
-
         return animals;
     }
 
@@ -49,43 +48,32 @@ public class AnimalFactory {
         return animal;
     }
 
-    public CanFly[] createFlyingAnimals(int howMany)
+    public CanFly[] createFlyingObjects(int howMany)
     {
         CanFly[] animals = new CanFly[howMany];
-
         for (int i = 0; i < animals.length; i++) {
-            animals[i] = createFlyingAnimal();
+            animals[i] = createFlyingObject();
         }
-
         return animals;
     }
 
-
     static int id = 0;
 
-    private CanFly createFlyingAnimal() {
-        CanFly animal;
-        int animalType = (int) (Math.random() * 3);
-
+    private CanFly createFlyingObject() {
+        int animalType = (int) (Math.random() * 4);
         switch (animalType) {
             case 0:
-                animal = new Duck();
-                break;
+                return new Duck();
             case 1:
-                animal = new Eagle("igel_" + id++);
-                break;
+                return new Eagle("igel_" + id++);
             case 2:
-                animal = new Duck();
-                break;
+                return new Duck();
             case 3:
-                animal = new MagicTiger("Alladyn");
-                break;
-
-            default:
-                animal = null;
-                break;
+                return new MagicTiger("Alladyn");
+            case 4:
+                return new Plane();
         }
-        return animal;
+        return null;
     }
 
 
