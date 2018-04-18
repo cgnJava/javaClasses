@@ -1,7 +1,9 @@
 #  Agenda
 - Modyfikatory dostępu
+- Immutable Objects
 - Enkapsulacja
 - Dziedziczenie
+- Polimorfizm
 
 ---
 ## Modyfikatory dostępu (ang. access modifiers)
@@ -96,11 +98,9 @@ Są to mechanizmy pozwalające programiście używać wartości, zmiennych i pod
 ---
 ### Zadanie domowe
 
-przeczytać pierwsze 2 rozdziały OCA/OCP Java® SE 7 Programmer I & II Study Guide by Kathy Sierra:
-1. Declarations and Access Control
-2. Object Orientation
+<a href="http://aksitha.com/Data%20Base/Oracle%20Database/Oracle%20Certifi%20ed%20Associate%20Java%20SE%208%20Programmer%20I%20Study%20%20Guide.pdf"><img src="../images/scjp.jpg" style="float: right"/></a>
 
-<a href="https://doc.lagout.org/programmation/Java/OCA_OCP%20Java%20SE%207%20Programmer%20I%20%26%20II%20Study%20Guide%20%28Exams%201Z0-803%20%26%201Z0-804%29%20%5BSierra%20%26%20Bates%202014-10-24%5D.pdf"><img src="../images/scjp.jpg"/></a>
-
-
-
+przeczytać pierwsze 3 rozdziały książki (link w obrazku):
+1. Java Building Blocks
+2. Operators and Statements
+3. Core Java APIs
