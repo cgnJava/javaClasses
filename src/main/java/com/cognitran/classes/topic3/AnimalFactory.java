@@ -1,13 +1,15 @@
 package com.cognitran.classes.topic3;
 
-import com.cognitran.classes.topic3.animals.*;
+import com.cognitran.classes.topic3.animals.Animal;
+import com.cognitran.classes.topic3.animals.CanFly;
+import com.cognitran.classes.topic3.animals.Cat8;
+import com.cognitran.classes.topic3.animals.Dog8;
+import com.cognitran.classes.topic3.animals.Duck;
+import com.cognitran.classes.topic3.animals.Eagle;
+import com.cognitran.classes.topic3.animals.MagicTiger;
+import com.cognitran.classes.topic3.animals.Tiger8;
 
 public class AnimalFactory {
-
-    public Animal[] createAnimals()
-    {
-        return new Animal[] {new Cat8("Cat1"), new Tiger8("Tiger2")};
-    }
 
     public Animal[] createAnimals(int howMany)
     {
@@ -40,7 +42,6 @@ public class AnimalFactory {
             case 4:
                 animal = new MagicTiger("Alladyn");
                 break;
-
             default:
                 animal = null;
                 break;

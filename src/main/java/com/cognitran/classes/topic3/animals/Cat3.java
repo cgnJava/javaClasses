@@ -1,10 +1,12 @@
 package com.cognitran.classes.topic3.animals;
 
 public class Cat3 {
+
     private String name;
     private String color;
 
-    public Cat3(String name) {
+    public void setName(String name)
+    {
         this.name = name;
     }
 
@@ -12,11 +14,13 @@ public class Cat3 {
         return name;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    public String getColor()
+    {
+        return color;
     }
 
-    public void play() {
-        System.out.println("Jestem kotkiem " + name + " koloru " + color + "  i się bawię.");
+    public void setColor(String color)
+    {
+        this.color = color;
     }
 }

@@ -5,14 +5,14 @@ import com.cognitran.classes.topic3.animals.Cat8;
 import com.cognitran.classes.topic3.animals.Tiger8;
 
 public class Animals8_2 {
-    public static void main(String[] args) {
-        AnimalFactory animalFactory = new AnimalFactory();
-        Animal[] animals = animalFactory.createAnimals();
-
-        ((Tiger8)animals[1]).kill();
-
+    
+    public static void main(String[] args)
+    {
+        Animal animal1 = new Tiger8("Tiger2");
+        ((Tiger8)animal1).kill();
 
         System.out.println("**** random ****");
+        AnimalFactory animalFactory = new AnimalFactory();
         Animal[] randomAnimals = animalFactory.createAnimals(5);
 
         for (Animal animal : randomAnimals) {
@@ -23,9 +23,6 @@ public class Animals8_2 {
                 ti.kill();
             }
         }
-
-
-
         System.out.println("All cats: " + Cat8.getCount());
     }
 }

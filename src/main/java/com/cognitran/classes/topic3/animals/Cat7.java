@@ -1,8 +1,9 @@
 package com.cognitran.classes.topic3.animals;
 
-public class Cat7 {
+public class Cat7
+{
     public static final int LEGS_COUNT = 4;
-    public static String defaultColor = "biały";
+    public static final String DEFAULT_COLOR = "biały";
     private static int catsCount = 0;
 
     private final int id;
@@ -11,7 +12,7 @@ public class Cat7 {
 
     public Cat7(String name) {
         this.name = name;
-        color = defaultColor;
+        color = DEFAULT_COLOR;
         id = catsCount++;
     }
 

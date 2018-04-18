@@ -59,6 +59,36 @@ do wspomagania operacji na tablicach isnieją statyczne metody w klasie Arrays:
 	1. Arrays.sort(a); - sortuje elementy w tablicy
 	2. Arrays.fill(a); - wypełnia całą tablicę podaną wartością
 	3. Arrays.copyOf(a); Arrays.copyOfRange(a); - tworzy kopię całej tablicy lub jej fragmentu
+	
+---
+#Ellipsis lub var-args (...)
+
+* argumenty - rzeczy, które są pomiędzy nawiasami, kiedy wywołujemy metodę:
+
+	doStuff("a", 2); // a & 2 są argumentami metody
+
+* parametry - rzeczy w sygnaturze metody, które wskazują co metoda musi otrzymać kiedy jest wywoływana
+
+	void doStuff(String s, int a) { } //oczekujemy 2 parametry - String oraz int
+
+---
+#Ellipsis lub var-args (...)
+
+Poprawna składnia metod typu var-args:
+
+**void doStuff(int... x) { }** //oczekuje od 0 do wielu parametrów typu int
+
+**void doStuff(char c, int... x) { }** //oczekuje pierwszego parmateru typu znakowego a potem od 0 do wielu parametrów typu int
+
+**void doStuff(Animal... animal) { }** //oczekuje od 0 do wielu obiektów typu Animal
+
+Niepoprawna składnia metod typu var-args:
+
+**void doStuff(int x...) { }** 	// zła składnia
+
+**void doStuff(int... x, char... y)) { }** // tylko jeden var-args jest dozwolony
+
+**void doStuff(String... s, byte b) { }** // var-args musi być ostatni
 
 ---
 # Listy - java.util.List 1/2;

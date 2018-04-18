@@ -24,7 +24,6 @@ public class TigerX extends CatX {
         say("zabijam");
     }
 
-
     public void playHard() {
         kill();
     }
