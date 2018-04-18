@@ -82,11 +82,26 @@ public class Horse extends Animal { //Is-A - Koń jest zwierzęciem
 ```
 
 ---
+
+#Polimorfizm
+
+Są to mechanizmy pozwalające programiście używać wartości, zmiennych i podprogramów na kilka różnych sposobów. Inaczej mówiąc jest to możliwość wyabstrahowania wyrażeń od konkretnych typów.
+
+- List<String> list = new ArrayList<>();
+- Eagle eagle = new Eagle();
+- Bird bird = new Eagle();
+- Animal animal = new Eagle();
+- CanFly canFly = new Eagle();
+
+---
 ### Zadanie domowe
 
-przeczytać pierwsze 2 rozdziały OCA/OCP Java® SE 7 Programmer I & II Study Guide by Kathy Sierra:
+przeczytać pierwsze 3 rozdziały OCA/OCP Java® SE 7 Programmer I & II Study Guide by Kathy Sierra:
 1. Declarations and Access Control
 2. Object Orientation
+3. Assignments
 
-<img src="../images/scjp.jpg"/>
+<a href="https://doc.lagout.org/programmation/Java/OCA_OCP%20Java%20SE%207%20Programmer%20I%20%26%20II%20Study%20Guide%20%28Exams%201Z0-803%20%26%201Z0-804%29%20%5BSierra%20%26%20Bates%202014-10-24%5D.pdf"><img src="../images/scjp.jpg"/></a>
+
+
 
