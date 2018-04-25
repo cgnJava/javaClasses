@@ -207,6 +207,10 @@ public void main() throws StudentDatabaseException {
 - klasy z testami nie muszą rozszerzać klasy TestCase
 - asercje trzeba importować: import static org.junit.Assert.*
 - metody nie muszą zaczynać się od słowa test***, ale muszą mieć adnotację @Test
+- adnotacje @Before - oznaczamy w ten sposób metodę która ma się odpalić przed każdym testem
+- adnotacje @BeforeClass - oznaczamy w ten sposób metodę która ma się odpalić raz przed wszystkimi testami w klasie - metoda musi być statyczna
+- adnotacja @Ignore - dodawana do metody lub klasy testującej - pozwala na tymczasowe wyłączenie testu
+- w Eclipse można odpalić wszystkie testy w aplikacji lub w pakiecie - klikamy prawym przyciskiem na src/test/java lub na pakiecie -> Run As -> JUnit test
 
 ---
 ## Zadanie domowe
