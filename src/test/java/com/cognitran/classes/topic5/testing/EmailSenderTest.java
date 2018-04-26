@@ -23,7 +23,7 @@ public class EmailSenderTest
         example.sendEmail("leszek", "email");
 
         //then
-        // weryfikujemy że metody getEmail() i saveEmail() zostały wywołane
+        // opcjonalnie: weryfikujemy że metody getEmail() i saveEmail() zostały wywołane przynajmniej raz
         verify(mock, atLeastOnce()).getEmail("leszek");
         verify(mock, atLeastOnce()).saveEmail(anyString(), anyString());
     }

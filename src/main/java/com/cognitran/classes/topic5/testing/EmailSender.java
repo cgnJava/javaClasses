@@ -1,5 +1,8 @@
 package com.cognitran.classes.topic5.testing;
 
+/**
+ * Przykład mockowania.
+ */
 public class EmailSender
 {
     protected DBRepository database;

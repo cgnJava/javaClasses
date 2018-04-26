@@ -217,6 +217,8 @@ public void main() throws StudentDatabaseException {
 
 <a href="http://aksitha.com/Data%20Base/Oracle%20Database/Oracle%20Certifi%20ed%20Associate%20Java%20SE%208%20Programmer%20I%20Study%20%20Guide.pdf"><img src="../images/scjp.jpg" style="float: right"/></a>
 
+Napisać testy w klasie CalculatorTest.
+
 przeczytać następne rozdziały książki (link w obrazku):
 1. Java Building Blocks
 2. Operators and Statements
