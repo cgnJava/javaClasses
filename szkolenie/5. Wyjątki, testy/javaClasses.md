@@ -1,6 +1,8 @@
-#  Agenda
-- Wyjątki i błędy
-- Testy
+class: center, middle, inverse
+# Obsługa wyjątków
+### Czyli jak, kiedy, czym i w kogo rzucać
+#Testowanie
+###Jak unikać "błenduf" w kodzie
 ---
 ## Wyjątki (ang. exception)
 Exception – zdarzenie występujące podczas wykonywania programu, który zakłóca normalny przepływ instrukcji programu
@@ -59,6 +61,22 @@ try {
 }
 ```
 ---
+## Obsługa wyjątków
+#### Kilka  wyjatków w jednym catch (od Javy 7)
+
+```java
+try {
+
+	doSomeCrazyStuff();
+	doSomeMoreCrazyStuff(someParam);
+	
+} catch(IllegalArgumentException | FileNotFoundException e) {
+
+	System.err.println("Ooops... poszło nie tak...");
+	e.printStackTrace();
+}
+```
+---
 
 ## Wyjątki (ang. exception)
 
@@ -76,24 +94,6 @@ try {
 	- rzucane przez wirtualną maszynę Javy
 	- aplikacja nie powinna ich obsługiwać
 	- nie pisze się własnych błędów
-
----
-## Obsługa wyjątków
-#### Kilka  wyjatków w jednym catch
-
-```java
-try {
-
-	doSomeCrazyStuff();
-	doSomeMoreCrazyStuff(someParam);
-	
-} catch(IllegalArgumentException | FileNotFoundException e) {
-
-	System.err.println("Ooops... poszło nie tak...");
-	e.printStackTrace();
-}
-```
-	
 ---
 ### Popularne wyjątki - Checked Exceptions
 - FileNotFoundException - gdy próbujemy czytać plik, który nie istnieje
@@ -129,10 +129,12 @@ try {
 ---
 
 ### Popularne wyjątki - rzucane przez programistę
-- IllegalArgumentException - rzucane przez programistę, aby wskazać, że metoda została wywołana z nielegalnym lub niewłaściwym argumentem
+- IllegalArgumentException - rzucane przez programistę, aby wskazać, że metoda została wywołana z niepoprawnym lub niewłaściwym argumentem
+- IllegalStateException - aplikacja znalazła się w niepoprawnym stanie, np. rzucamy ten wyjątek w bloku catch kiedy coś nie powinno się wydarzyć
 
 ---
 ## Tworzenie własnych klas wyjątków
+99% własnych wyjątków dziedziczy po RuntimeException i ma dokładnie taką strukturę:
 
 ```java
 public class StudentDatabaseException extends Exception {
@@ -176,16 +178,43 @@ public void main() throws StudentDatabaseException {
 	
 }
 ```
+---
+## Bad, bad developer!!!
+#### Zjadanie stack trace lub całego wyjątku
+
+.pull-left[
+```java
+try {
+	...
+} catch(SomeException e) {
+	log.error("Łojojoj!");
+}
+```
+
+.zle[ŹLE!!!]
+
+&nbsp;
+
+```java
+} catch(SomeException e) {
+	log.error("Łojojoj ale dobrze!", e);
+	//throw new RuntimeException(e);
+}
+```
+
+.dobrze[DOBRZE]
+]
+.pull-right[
+<img src="../images/yougonnafinishthat.jpg" width="90%" style="float:right">
+]
 
 ---
 ### Rodzaje/poziomy tesowania kodu
-- Unit Testing - zorientowane na przetesowanie pojedynczej metody
-- Integration Testing – zorientowane na przetestowanie interakcji pomiędzy komonentami, wearstwami, etc.
-- Functional Testing - weryfikuje czy funkcjonalność jest zgodna ze specyfikacją
-- Acceptance Testing
-- Regression testing - sprawdzamy czy wcześniej opracowane i przetestowane funkcjonalności działaja po zmianach w innych funkcjonalnościach
-- Performance Testing
-
+- Testy jednostkowe - zorientowane na przetesowanie pojedynczej metody
+- Testy integracyjne – zorientowane na przetestowanie interakcji pomiędzy komonentami, warstwami, etc.
+- Testy funkcjonalne - weryfikują czy funkcjonalność jest zgodna ze specyfikacją
+- Testy regresyjne - sprawdzamy czy wcześniej opracowane i przetestowane funkcjonalności działaja po zmianach w innych funkcjonalnościach
+- Testy wydajnościowe - sprawdzają jak aplikacja zachowuję się pod dużym obciążeniem
 ---
 ###Definicje
 
@@ -217,7 +246,7 @@ public void main() throws StudentDatabaseException {
 
 <a href="http://aksitha.com/Data%20Base/Oracle%20Database/Oracle%20Certifi%20ed%20Associate%20Java%20SE%208%20Programmer%20I%20Study%20%20Guide.pdf"><img src="../images/scjp.jpg" style="float: right"/></a>
 
-Napisać testy w klasie CalculatorTest.
+Napisać testy w klasie **CalculatorTest**.
 
 przeczytać następne rozdziały książki (link w obrazku):
 1. Java Building Blocks
