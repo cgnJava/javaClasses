@@ -9,6 +9,7 @@ public class ProductParser
       sparsuj wszytkie wartości z tablicy - pomiń błędne produkty
       rzuć wyjątkiem:
         jeśli jest za mało lub za dużo elementów
+        jeśli nazwa jest pusta
         jeśli nie da się sparsować ceny
         jesli nieznana kategoria
      */

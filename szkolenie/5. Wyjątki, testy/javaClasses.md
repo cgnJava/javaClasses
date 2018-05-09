@@ -214,6 +214,7 @@ try {
 - Testy integracyjne – zorientowane na przetestowanie interakcji pomiędzy komonentami, warstwami, etc.
 - Testy funkcjonalne - weryfikują czy funkcjonalność jest zgodna ze specyfikacją
 - Testy regresyjne - sprawdzamy czy wcześniej opracowane i przetestowane funkcjonalności działaja po zmianach w innych funkcjonalnościach
+- Testy automatyczne - pisane przez programistów kolejne kroki i oczekiwane rezultaty
 - Testy wydajnościowe - sprawdzają jak aplikacja zachowuję się pod dużym obciążeniem
 ---
 ###Definicje
