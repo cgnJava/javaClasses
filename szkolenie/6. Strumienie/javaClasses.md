@@ -3,6 +3,27 @@ class: center, middle, inverse
 ### Czyli o strumieniach, pisarzach i czytelnikach <br>(oraz o tym, dlaczego nie sposób mówić po polsku o programowaniu...)
 
 ---
+## Operacje wejścia/wyjścia
+#### Klasa java.io.File
+
+- reprezentuje w Javie nie tylko plik, ale także katalog
+- new File("aaa.dat") nie tworzy automatyczanie pliku fizycznie na dysku
+
+```java
+public class DirList
+{
+    public static void main(String[] args)
+    {
+        File path = new File(".");
+        String[] list = path.list();
+        for (String file : list)
+        {
+            System.out.println(file);
+        }
+    }
+}
+```
+---
 
 ## Operacje wejścia/wyjścia
 #### Strumienie - I/O streams
