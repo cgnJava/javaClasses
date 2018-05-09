@@ -2,17 +2,17 @@ package com.cognitran.classes.topic5.exception;
 
 public enum ProductType
 {
-    TOOLS("T"), VEGETABLE("V"), FRUIT("F");
+    TOOLS("T"), VEGETABLE("V"), FRUIT("F"), GIFT("G");
 
-    private final String value;
+    private final String shortcut;
 
-    private ProductType(String value)
+    private ProductType(String shortcut)
     {
-        this.value = value;
+        this.shortcut = shortcut;
     }
 
-    public String getValue()
+    public String getShortcut()
     {
-        return value;
+        return shortcut;
     }
 }
