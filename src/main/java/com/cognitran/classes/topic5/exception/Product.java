@@ -1,10 +1,13 @@
 package com.cognitran.classes.topic5.exception;
 
+import java.util.Date;
+
 public class Product
 {
     private String name;
     private double price;
     private ProductType category;
+    private Date since;
 
     public String getName()
     {
@@ -34,5 +37,15 @@ public class Product
     public void setCategory(ProductType category)
     {
         this.category = category;
+    }
+
+    public Date getSince()
+    {
+        return since;
+    }
+
+    public void setSince(Date since)
+    {
+        this.since = since;
     }
 }

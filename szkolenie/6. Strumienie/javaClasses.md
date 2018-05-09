@@ -168,6 +168,15 @@ writer.write(text);
 ```
 
 ---
+<img src="../images/file_text.svg" width="15%" style="float: right; margin-top: 3ex">
+
+## Operacje wejścia/wyjścia
+#### Strumienie znakowe buforowane - operacje na liniach tekstu
+
+- BufferedReader i BufferedWriter
+
+Operacje na strumieniu stają się buforowane. W większości przypadków skutkuje to znaczącym wzrostem efektywności. Zamiast wykonywać wiele drobnych operacji na strumieniu, np. wiele razy odczytywać/zapisywać z pliku dyskowego małe porcje danych. Dekorator odczytuje większą porcję na zapas lub zapamiętuje dane, które mają być wysłane do strumienia dopóki nie uzbiera się ich dostateczna ilość. Jeżeli dane powinny być wysłane do strumienia niezwłocznie, niezależnie od tego, czy bufor jest pełen czy nie, można to wymusić wywołując metodę flush(). Bufor jest opróżniany również w momencie wywołania metody close().
+---
 
 <img src="../images/file_text.svg" width="15%" style="float: right; margin-top: 3ex">
 
@@ -185,13 +194,6 @@ while(line!=null) {
 	line = bufReader.readLine();
 }
 ```
-
----
-
-<img src="../images/file_text.svg" width="15%" style="float: right; margin-top: 3ex">
-
-## Operacje wejścia/wyjścia
-#### Strumienie znakowe buforowane - operacje na liniach tekstu
 
 - Zapis linia po linii: `BufferedWriter`
 

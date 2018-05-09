@@ -1,5 +1,6 @@
 package com.cognitran.classes.topic5.exception;
 
+import java.io.InputStream;
 import java.util.List;
 
 public class ProductParser
@@ -24,7 +25,7 @@ public class ProductParser
             narzędzia:0
        3. Napisz kompresor (GZIPOutputStream) / dekompresor (GZIInputStream). Spakuj / rozpakuj / porównaj zawartość pliku z archiwum.
      */
-    public List<Product> parseProductsFromFile(String fileName) throws ProductParseException
+    public List<Product> parseProductsFromInputStream(InputStream stream) throws ProductParseException
     {
         return null;
     }
