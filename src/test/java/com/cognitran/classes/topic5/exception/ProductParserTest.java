@@ -35,6 +35,31 @@ public class ProductParserTest
     }
 
     @Test
+    public void shouldNotParseProductsByShortcut()
+    {
+        String[] products = {
+            "Różowe stringi;23.00;B;2018-01-01",
+            "Wiertarka udarowa;175,00;T;2018-01",
+            "Ziemniaki;3.50;2018-01-01",
+            "Kapusta;dwa złote;V;2018-03-05"
+        };
+        ProductParser parser = new ProductParser();
+        try
+        {
+            parser.parseProducts(products, CategoryParseType.BY_SHORTCUT);
+            fail();
+        }
+        catch (ProductParseException e)
+        {
+            List<String> errors = e.getErrors();
+            assertEquals(3, errors.size());
+            assertEquals("Niepoprawna kategoria: BIELIZNA", errors.get(0));
+            assertEquals("Linia 3 powinna mieć 4 elementy", errors.get(1));
+            assertEquals("Niepoprawna cena: dwa złote", errors.get(2));
+        }
+    }
+
+    @Test
     public void shouldNotParseProductsByOrdinal()
     {
         String[] products = {
@@ -46,7 +71,7 @@ public class ProductParserTest
         ProductParser parser = new ProductParser();
         try
         {
-            parser.parseProducts(products, CategoryParseType.BY_NAME);
+            parser.parseProducts(products, CategoryParseType.BY_ORINAL);
             fail();
         }
         catch (ProductParseException e)

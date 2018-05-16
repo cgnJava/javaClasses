@@ -38,5 +38,15 @@ public class ArraysTaskTest
         assertEquals(1250, task.calculateMedian(new double[] {1900, 1000, 1200, 1300}), 0.01);
         assertEquals(1200, task.calculateMedian(new double[] {1900, 1000, 1200}), 0.01);
     }
+    
+    @Test
+    public void should()
+    {
+        ArraysTask task = new ArraysTask();
+        char[] result = task.getFirstCharactersOfAlphabet(5, false);
+        assertArrayEquals(new char[] {'a', 'b', 'c', 'd', 'e'}, result);
 
+        result = task.getFirstCharactersOfAlphabet(4, true);
+        assertArrayEquals(new char[] {'A', 'B', 'C', 'D'}, result);
+    }
 }

@@ -28,9 +28,10 @@ public class ProductParser
 
         2.
         liczbą w 2-giej kolumnie może być przecinek zamiast kropki
-        jeśli nazwa nie zaczyna się wielką literą
+        jeśli nazwa nie zaczyna się wielką literą - Character.isUpperCase()
         jeśli cena jest mniejsza o zera
         jeśli cena jest równa 0 dla kategorii GIFT
+        odczytanie daty
         obsługa CategoryParseType
      */
     public List<Product> parseProducts(String[] products, CategoryParseType categoryParseType) throws ProductParseException

@@ -47,4 +47,12 @@ public class ArraysTask
         }
         return result;
     }
+
+    /**
+     * Wiedząc, że 'b' = (char) 'a' + 1, napisz metodę, która zwróci tablicę char[] zawierającą pierwsze n liter alfabetu
+     */
+    public char[] getFirstCharactersOfAlphabet(int n, boolean uppercase)
+    {
+        return null;
+    }
 }
