@@ -1,7 +1,7 @@
 package com.cognitran.classes.topic4.figure;
 
 /**
-Utwórz klasę o nazwie NumberWrapper, której jedyny konstruktor przyjmuje liczbę.
+Utwórz klasę immutable o nazwie NumberWrapper, której jedyny konstruktor przyjmuje liczbę (double).
 Klasa powinna mieć następujące metody:
     MyNumber isOdd() - true jeśli przekazany atrybut jest nieparzysty,
     MyNumber isEven() - true jeśli przekazany atrybut jest parzysty,
@@ -10,6 +10,6 @@ Klasa powinna mieć następujące metody:
     MyNumber add(MyNumber x) - zwraca sumę atrybutu i x opakowaną w klasę MyNumber,
     MyNumber subtract(MyNumber x) - zwraca różnicę atrybutu i x opakowaną w klasę MyNumber.
  */
-public class NumberWrapper<N extends Number>
+public class NumberWrapper
 {
 }
