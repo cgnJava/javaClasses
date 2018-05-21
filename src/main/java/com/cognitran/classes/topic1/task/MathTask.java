@@ -35,4 +35,13 @@ public class MathTask
         int index = (int) Math.round((list.size() - 1) * Math.random());
         return list.get(index).intValue();
     }
+
+    /**
+     * Metoda przyjmuje jako parametr tablicę 6-elementową.
+     * Wylosuj liczby od 1 do 50 i zwróć liczbę trafionych liczb w dużym lotku.
+     */
+    public int lotto(int... coupon)
+    {
+        return 0;
+    }
 }
