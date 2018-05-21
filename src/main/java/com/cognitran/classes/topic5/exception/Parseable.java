@@ -5,5 +5,5 @@ public interface Parseable<ANY>
     /**
      * throws IllegalArgumentException - if the conversion fails
      */
-    ANY parse(String value);
+    ANY parse(String value) throws IllegalArgumentException;
 }

@@ -71,7 +71,7 @@ public class ProductParserTest
         ProductParser parser = new ProductParser();
         try
         {
-            parser.parseProducts(products, CategoryParseType.BY_ORINAL);
+            parser.parseProducts(products, CategoryParseType.BY_ORDINAL);
             fail();
         }
         catch (ProductParseException e)
