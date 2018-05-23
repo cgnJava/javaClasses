@@ -50,6 +50,7 @@ public class ArraysTask
 
     /**
      * Wiedząc, że 'b' = (char) 'a' + 1, napisz metodę, która zwróci tablicę char[] zawierającą pierwsze n liter alfabetu
+     * @see Character.toUpperCase()
      */
     public char[] getFirstCharactersOfAlphabet(int n, boolean uppercase)
     {

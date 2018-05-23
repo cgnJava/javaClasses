@@ -7,10 +7,13 @@ package com.cognitran.classes.topic4.figure;
     - Circle - długość promienia, (wykorzystać Math.PI)
     - Triangle - 3 długości boków trójkąta,
     - Rectangle - długość boków prostokąta,
-    - Squere - dziedziczy po Rectangle - konstruktor przyjmuje tylko jeden parametr
+    - Square - dziedziczy po Rectangle - konstruktor przyjmuje tylko jeden parametr
 
     W teście utwórz instancje tych obiektów i umieśc je w tablicy Figure[]. Następnie iterując po obiektach wyświetl pole oraz obwód każdego obiektu.
  */
 public interface Figure
 {
+    double getCircumference();
+
+    double getArea();
 }
