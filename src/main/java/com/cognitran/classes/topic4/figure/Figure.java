@@ -10,6 +10,10 @@ package com.cognitran.classes.topic4.figure;
     - Square - dziedziczy po Rectangle - konstruktor przyjmuje tylko jeden parametr
 
     W teście utwórz instancje tych obiektów i umieśc je w tablicy Figure[]. Następnie iterując po obiektach wyświetl pole oraz obwód każdego obiektu.
+
+    Prism - Graniastosłup, który w konstruktorze przyjmuje Figure oraz wysokość i implementuje interfejs ThreeDimensional
+    Objętość = Pole podstawy * h
+    Pole powierzchni = 2 * pole podstawy + obwód podstawy * h
  */
 public interface Figure
 {
