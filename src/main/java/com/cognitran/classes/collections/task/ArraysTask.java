@@ -60,7 +60,7 @@ public class ArraysTask
     /**
      * Zwróć różnicę między największą i najmniejszą wartością w tablicy.
      */
-    public int bigDifference(int[] nums)
+    public int biggestDifference(int[] nums)
     {
         return 0;
     }

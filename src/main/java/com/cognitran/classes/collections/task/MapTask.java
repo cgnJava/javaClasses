@@ -87,6 +87,7 @@ public class MapTask
 
     /**
      * gdy łańcuch pojawi się w tablicy 2., 4., 6. ... raz., dołącz łańcuch do wyniku. Zwróć pusty ciąg znaków, jeśli żaden ciąg nie pojawi się po raz drugi.
+     * wordAppend("Ala", "Ala", "ma", "kota") => Ala
      */
     public String wordAppend(String... strings)
     {
@@ -94,8 +95,8 @@ public class MapTask
     }
 
     /**
-     * Zwróć mapę połączonych napisów pogrupowanych po pierwszej literze, np:
-     * firstChar("Ala", "bob", "barek") -> {A: "Ala"; B: "bobbarek"}
+     * Zwróć mapę połączonych napisów pogrupowanych po pierwszej literze, nieważna jest wielkość liter np:
+     * firstChar("Ala", "bob", "Barek") -> {A: "Ala"; B: "bobBarek"}
      */
     public Map<String, String> firstChar(String... strings)
     {
