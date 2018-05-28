@@ -56,4 +56,72 @@ public class ArraysTask
     {
         return null;
     }
+
+    /**
+     * Zwróć różnicę między największą i najmniejszą wartością w tablicy.
+     */
+    public int bigDifference(int[] nums)
+    {
+        return 0;
+    }
+
+    /**
+     * Zwróć true jeśli tablica zawiera liczbę kończącą się na 3.
+     */
+    public boolean endsWith3(int[] nums)
+    {
+        return false;
+    }
+
+    /**
+     * 
+    Zwróć tablicę zawierającą dokładnie te same liczby, co podana tablica, ale uporządkowaną tak, aby wszystkie liczby parzyste znalazły się przed wszystkimi liczbami nieparzystymi.
+    Poza tym liczby mogą być w dowolnej kolejności. Możesz modyfikować i zwracać daną tablicę lub tworzyć nową tablicę.
+     */
+    public int[] evenOdd(int[] nums)
+    {
+        return null;
+    }
+
+    /**
+     * Zwróć true jeśli w kazdej sąsiedniej parze w tablicy znajduje się podana w drugim parametrze liczba.
+     * np.
+     * isEverywhere([1, 2, 1, 3], 1) = true
+     * isEverywhere([1, 2, 1, 3], 2) = false, bo 1,3 nie zawiera 2
+     */
+    public boolean isEverywhere(int[] nums, int val)
+    {
+        return false;
+    }
+
+    /**
+     * Zwróć sumę liczb niepowtarzających się, np.
+     * loneSum(1,2,3) = 6
+     * loneSum(1,2,2) = 1
+     * loneSum(1,1,1) = 0
+     */
+    public int loneSum(int... values)
+    {
+        return 0;
+    }
+
+    /**
+     * Jest ciągiem matematycznym?
+     * np. evenlySpaced(2,4,6) = true
+     * evenlySpaced(2,4,6,7) = false
+     */
+    public boolean evenlySpaced(int... values)
+    {
+        return false;
+    }
+
+    /**
+     * Zwróć wartość, która jest najbliższa 21, bez przekraczania tej wartości.
+     * np, blackjack(17,19) = 19
+     * blackjack(17,22) = 17
+     */
+    public int blackjack(int... values)
+    {
+        return 0;
+    }
 }

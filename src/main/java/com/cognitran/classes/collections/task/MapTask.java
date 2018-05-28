@@ -57,4 +57,39 @@ public class MapTask
         }
         return 0;
     }
+
+    /**
+     * Zwróć mapę gdzie kluczem będzie pierwsza litera pisana wielkimi literami, a wartością ostatnia litera pisana małą literą, np.
+     * pairs(["code", "bug"]) → {"C": "e", "B": "g"}
+     * pairs(["0code", "bug0"]) → {"C": "e", "B": "g"}
+     */
+    public Map<String, String> pairs(String... strings)
+    {
+        return null;
+    }
+
+    /**
+     * Zlicz wystąpienia słów. np.
+     * wordCount("a", "b", "a", "c", "b") = {"a": 2, "b": 2, "c": 1}
+     */
+    public Map<String, Integer> wordCount(String... strings)
+    {
+        return null;
+    }
+
+    /**
+     * Zwróć mapę wyrazów gdzie kluczem jest wyraz a wartością boolean który mówi czy wyraz wystąpił przynajmniej 2 razy
+     */
+    public Map<String, Boolean> wordMultiple(String... strings)
+    {
+        return null;
+    }
+
+    /**
+     * gdy łańcuch pojawi się w tablicy 2., 4., 6. ... raz., dołącz łańcuch do wyniku. Zwróć pusty ciąg znaków, jeśli żaden ciąg nie pojawi się po raz drugi.
+     */
+    public String wordAppend(String[] strings)
+    {
+        return "";
+    }
 }

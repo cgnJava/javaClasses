@@ -79,7 +79,7 @@ public class ProductParser
         }
         try
         {
-            product.setCategory(ProductType.valueOf(line[2]));
+            categoryParseType.parse(line[2]);
         }
         catch (IllegalArgumentException ex)
         {
