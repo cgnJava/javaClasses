@@ -86,4 +86,15 @@ public class ArraysTask2
     {
         return 0;
     }
+
+    /**
+     * Zwraca true jesli kazda nastepna liczba jest wieksza lub rowna niz poprzednia
+     * scoresIncreasing([1, 3, 4]) = true
+     * scoresIncreasing([1, 3, 2]) = false
+     * scoresIncreasing([1, 1, 4]) = true
+     */
+    public boolean scoresIncreasing(int[] scores)
+    {
+        return false;
+    }
 }
