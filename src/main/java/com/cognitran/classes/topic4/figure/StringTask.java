@@ -53,4 +53,18 @@ public class StringTask
     {
         return false;
     }
+
+    /**
+     * zwraca true jesli liczba wystapien "is" jest równa liczbie wystapien "not"
+     * 
+     * equalIsNot("This is not") = false
+     * equalIsNot("This is notnot") = true
+     * equalIsNot("noisxxnotyynotxisi") = true
+     */
+    public boolean equalIsNot(String str)
+    {
+        //str.indexOf("is");
+        //str.replaceFirst("is", "");
+        return false;
+    }
 }
